@@ -8,10 +8,14 @@ function createGrid(gridSize){
                     includes elements padding
                     excludes borders, margins, scrollbars */
     const cellSize = containerSize / gridSize;
-    
+
     for (let i = 0; i < gridSize*gridSize; i++) {
         const gridItem = document.createElement('div');
         gridItem.classList.add("grid-item");
+
+        // dynamically size each item
+        gridItem.style.width = `${cellSize}px`;
+        gridItem.style.height = `${cellSize}px`;
 
         container.appendChild(gridItem);
         
