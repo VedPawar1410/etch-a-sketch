@@ -23,8 +23,6 @@ body {
 /* Grid Item */
 .grid-item{
     border: 1px solid rgb(209, 209, 198);
-    width: 100px;
-    height: 100px;
     box-sizing: border-box;
     background-color: rgb(242, 255, 255);
 }
