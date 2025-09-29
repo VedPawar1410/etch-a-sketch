@@ -13,3 +13,15 @@ function createGrid(gridSize){
 }
 
 createGrid(gridSize);
+
+
+// Adding a hover effect
+let hoverGrid = document.querySelectorAll('.grid-item');
+for (let elem of hoverGrid) {
+    elem.addEventListener('mouseenter', () => {
+        elem.style.backgroundColor = 'blue';
+    })
+    /* elem.addEventListener('mouseleave', () => {
+        elem.style.backgroundColor = '';
+    }) */
+};
