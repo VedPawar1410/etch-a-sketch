@@ -74,7 +74,15 @@ function getRandomColor() {
 }
 
 rgbButton.addEventListener("click",()=>{
-    rgbButton.style.backgroundColor = getRandomColor();
+    let rgbHoverGrid = document.querySelectorAll('.grid-item');
+    for (let elem of rgbHoverGrid) {
+        elem.addEventListener('mouseenter', () => {
+            elem.style.backgroundColor = getRandomColor();
+        })
+        /* elem.addEventListener('mouseleave', () => {
+            elem.style.backgroundColor = '';
+        }) */
+    };
 });
 
 document.body.appendChild(rgbButton);
