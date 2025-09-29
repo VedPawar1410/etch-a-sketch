@@ -12,7 +12,8 @@ h1{
     display: flex;
     justify-content: center;
     font-size: 50px;
-    color: #9625ff;
+    color: #ba25ff;
+    margin-top:40px;
 }
 
 /* Container Flex container */
@@ -21,7 +22,7 @@ h1{
     flex-wrap: wrap;
     width: 1600px; /* 16 items * 100px each */
     height: 1600px; /* 16 items * 100px each */
-    margin-top: 50px;
+    margin-top: 20px;
     border: 2px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* justify-content: center;
@@ -40,7 +41,7 @@ h1{
 button{
     border-radius: 10px;
     border-color: blue;
-    background-color: aqua;
+    background-color: rgb(167, 163, 255);
     color: black;
     width: 250px;
     height: 50px;
