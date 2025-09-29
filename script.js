@@ -56,5 +56,4 @@ btn.addEventListener("click",()=>{
     createGrid(gridUserInput);
 });
 
-//Use prepend() to add the button as the first child of the body.
-document.body.prepend(btn);
+document.body.appendChild(btn);
