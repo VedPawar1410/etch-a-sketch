@@ -56,7 +56,9 @@ btn.addEventListener("click",()=>{
     createGrid(gridUserInput);
 });
 
-document.body.appendChild(btn);
+//reference for buttons
+const buttonContainer = document.querySelector(".buttons-bottom");
+buttonContainer.appendChild(btn);
 
 
 // Randomise the colors with RGB interation
@@ -85,4 +87,4 @@ rgbButton.addEventListener("click",()=>{
     };
 });
 
-document.body.appendChild(rgbButton);
+buttonContainer.appendChild(rgbButton);
