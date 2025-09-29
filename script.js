@@ -57,3 +57,24 @@ btn.addEventListener("click",()=>{
 });
 
 document.body.appendChild(btn);
+
+
+// Randomise the colors with RGB interation
+const rgbButton = document.createElement('button');
+rgbButton.textContent="Randomise";
+
+//to make a random color
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+rgbButton.addEventListener("click",()=>{
+    rgbButton.style.backgroundColor = getRandomColor();
+});
+
+document.body.appendChild(rgbButton);
