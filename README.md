@@ -1,40 +1,40 @@
 # etch-a-sketch
 A simple interactive Etch-a-Sketch web app built with HTML, CSS, and JavaScript. Create grids, draw by hovering, and switch between solid color and random RGB hover effects.
 
-Features
+## Features
 
-Dynamic Grid Size – Prompt the user to choose any grid size (up to 100 × 100).
+* Dynamic Grid Size – Prompt the user to choose any grid size (up to 100 × 100).
 
-Hover Drawing – Move your mouse over grid squares to color them.
+* Hover Drawing – Move your mouse over grid squares to color them.
 
-Random Color Mode – Toggle hover between blue and random RGB colors.
+* Random Color Mode – Toggle hover between blue and random RGB colors.
 
-Reset / New Grid – Clear the grid and create a new one of any size.
+* Reset / New Grid – Clear the grid and create a new one of any size.
 
-Responsive Design – The grid automatically scales to fit the container.
+* Responsive Design – The grid automatically scales to fit the container.
 
-How to Use
+## How to Use
 
-Open index.html in your browser.
+1. Open index.html in your browser.
 
-Click New Grid to set the grid size.
+2. Click New Grid to set the grid size.
 
-Hover over the grid squares to draw.
+3. Hover over the grid squares to draw.
 
-Click Randomise to toggle hover color between blue and random colors.
+4. Click Randomise to toggle hover color between blue and random colors.
 
-Technologies Used
+## Technologies Used
 
-HTML5
+* HTML5
 
-CSS3 (Flexbox for grid layout)
+* CSS3 (Flexbox for grid layout)
 
-Vanilla JavaScript
+* Vanilla JavaScript
 
-Screenshots
+## Screenshots
 Added in the repo: /images...
 
-Notes
+## Notes
 
 The grid automatically adjusts cell size to fit the container, keeping all cells perfectly square.
 
