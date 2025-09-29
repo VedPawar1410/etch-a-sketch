@@ -38,6 +38,7 @@ btn.addEventListener("click",()=>{
         gridUserInput = prompt("Enter the grid size you want < 100",'');
     }
     while(!(Number(gridUserInput)<=100) || typeof gridUserInput !== 'string');
+    container.replaceChildren(); //removes old grid and empties the container
     createGrid(gridUserInput);
 });
 
