@@ -2,6 +2,8 @@ const container = document.querySelector("#grid-container");
 const gridSize = 16;
 
 /* Fucntion to create custom size grid */
+createGrid(gridSize);
+
 function createGrid(gridSize){
     const containerSize = container.clientWidth; // assume square, so width == height
     /* clientWidth->built-in property of DOM element
@@ -18,23 +20,25 @@ function createGrid(gridSize){
         gridItem.style.height = `${cellSize}px`;
 
         container.appendChild(gridItem);
-        
     }
+    hoverEffect();
 }
 
-createGrid(gridSize);
+
 
 
 // Adding a hover effect
-let hoverGrid = document.querySelectorAll('.grid-item');
-for (let elem of hoverGrid) {
-    elem.addEventListener('mouseenter', () => {
-        elem.style.backgroundColor = 'blue';
-    })
-    elem.addEventListener('mouseleave', () => {
-        elem.style.backgroundColor = '';
-    })
-};
+function hoverEffect(){
+    let hoverGrid = document.querySelectorAll('.grid-item');
+    for (let elem of hoverGrid) {
+        elem.addEventListener('mouseenter', () => {
+            elem.style.backgroundColor = 'blue';
+        })
+        /* elem.addEventListener('mouseleave', () => {
+            elem.style.backgroundColor = '';
+        }) */
+    };
+}
 
 
 // Button and re-generate grid
