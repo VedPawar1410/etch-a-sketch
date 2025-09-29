@@ -3,6 +3,12 @@ const gridSize = 16;
 
 /* Fucntion to create custom size grid */
 function createGrid(gridSize){
+    const containerSize = container.clientWidth; // assume square, so width == height
+    /* clientWidth->built-in property of DOM element
+                    includes elements padding
+                    excludes borders, margins, scrollbars */
+    const cellSize = containerSize / gridSize;
+    
     for (let i = 0; i < gridSize*gridSize; i++) {
         const gridItem = document.createElement('div');
         gridItem.classList.add("grid-item");
